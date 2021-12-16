@@ -12,7 +12,6 @@ const routes: Routes = [
   { path: 'first-component', component: FirstComponent },
   { path: 'second-component', component: SecondComponent },
   { path: 'third-component', component: ThirdComponent },
-  { path: '**', component: NotFoundError },
 ];
 
 
