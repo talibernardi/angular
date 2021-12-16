@@ -3,11 +3,17 @@
 <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
 <nav>
     <ul>
-        <li><a routerLink="/first-component" routerLinkActive="active">First Component</a></li>
+        <li><a routerLink="/filme" routerLinkActive="active">Filme</a></li>
         <li><a routerLink="/second-component" routerLinkActive="active">Second Component</a></li>
         <li><a routerLink="/third-component" routerLinkActive="active">Third Component</a></li>
     </ul>
 </nav>
+
+
+<ul>
+    <li *ngFor= "let Filme.filme"> {{ filme.nome }} </li>
+  </ul>
+
 
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>

@@ -8,13 +8,15 @@ import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { ThirdComponent } from './third/third.component';
 import { FormsModule } from '@angular/forms';
+import { FilmeComponent } from './filme/filme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SecondComponent,
-    ThirdComponent
+    ThirdComponent,
+    FilmeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import {ThirdComponent } from './third/third.component';
+import { FilmeComponent } from './filme/filme.component';
 
 
 import { NgModule } from '@angular/core';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'first-component', component: FirstComponent },
   { path: 'second-component', component: SecondComponent },
   { path: 'third-component', component: ThirdComponent },
+  { path: 'filme', component: FilmeComponent },
 ];
 
 
