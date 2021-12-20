@@ -8,11 +8,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { NotFoundError } from 'rxjs';
-import { FilmeformComponent } from './filmeform/filmeform.component';
+import { BuscaFilmeComponent } from './buscafilme/buscafilme.component';
 
 const routes: Routes = [
   { path: 'first-component', component: FirstComponent },
-  { path: 'filmeform', component: FilmeformComponent },
+  { path: 'buscafilme', component: BuscaFilmeComponent },
   { path: 'filme', component: FilmeComponent },
   { path: 'livro', component: LivroComponent },
 ];

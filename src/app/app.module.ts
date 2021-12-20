@@ -10,7 +10,7 @@ import { ThirdComponent } from './third/third.component';
 import { FormsModule } from '@angular/forms';
 import { FilmeComponent } from './filme/filme.component';
 import { LivroComponent } from './livro/livro.component';
-import { FilmeformComponent } from './filmeform/filmeform.component';
+import { BuscaFilmeComponent } from './buscafilme/buscafilme.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { FilmeformComponent } from './filmeform/filmeform.component';
     ThirdComponent,
     FilmeComponent,
     LivroComponent,
-    FilmeformComponent
+    BuscaFilmeComponent,
   ],
   imports: [
     BrowserModule,

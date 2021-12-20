@@ -3,11 +3,11 @@ import { FilmeService } from 'src/services/filme.service';
 
 
 @Component({
-  selector: 'app-filmeform',
-  templateUrl: './filmeform.component.html',
-  styleUrls: ['./filmeform.component.css']
+  selector: 'app-buscafilme',
+  templateUrl: './buscafilme.component.html',
+  styleUrls: ['./buscafilme.component.css']
 })
-export class FilmeformComponent implements OnInit {
+export class BuscaFilmeComponent implements OnInit {
   titulo = '' 
   @Output() onSearch: EventEmitter<any> = new EventEmitter<any>()
 
