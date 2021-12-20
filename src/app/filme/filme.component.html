@@ -1,33 +1,45 @@
+<app-filmeform (onSearch)="respostafilme($event)"></app-filmeform>
+
 <div class="container">
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Título</th>
+            <th scope="col">Diretor</th>
+            <th scope="col">Duracao</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Ação</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+        
+          
+          <tr *ngFor= "let filme of filmes">
+         
+            <td scope="row">{{ filme.titulo}}</td>
+            <td scope="row">{{ filme.diretor}}</td>
+            <td scope="row">{{ filme.duracao}}</td>
+            <td scope="row">{{ filme.genero}}</td>
+             
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ação
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Editar</a>
+                  <a class="dropdown-item" href="#" (click)="deletafilme(filme.id)">Deletar</a>
+                </div>
+              </div>
+            </td>
+      
           </tr>
         </tbody>
       </table>
 </div>
+
+
+
+<app-livro></app-livro>
 
 

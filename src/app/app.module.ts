@@ -9,6 +9,8 @@ import { SecondComponent } from './second/second.component';
 import { ThirdComponent } from './third/third.component';
 import { FormsModule } from '@angular/forms';
 import { FilmeComponent } from './filme/filme.component';
+import { LivroComponent } from './livro/livro.component';
+import { FilmeformComponent } from './filmeform/filmeform.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FilmeComponent } from './filme/filme.component';
     FirstComponent,
     SecondComponent,
     ThirdComponent,
-    FilmeComponent
+    FilmeComponent,
+    LivroComponent,
+    FilmeformComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+
+
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Título</th>
+            <th scope="col">Editora</th>
+            <th scope="col">Duracao</th>
+            <th scope="col">Genero</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+          
+          <tr *ngFor= "let livro of livros">
+         
+            <td scope="row">{{ livro.titulo}}</td>
+            <td scope="row">{{ livro.editora}}</td>
+            <td scope="row">{{ livro.duracao}}</td>
+            <td scope="row">{{ livro.genero}}</td>
+      
+          </tr>
+        </tbody>
+      </table>
+</div>

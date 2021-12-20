@@ -1,5 +1,5 @@
 import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
+import { LivroComponent } from './livro/livro.component';
 import {ThirdComponent } from './third/third.component';
 import { FilmeComponent } from './filme/filme.component';
 
@@ -8,12 +8,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { NotFoundError } from 'rxjs';
+import { FilmeformComponent } from './filmeform/filmeform.component';
 
 const routes: Routes = [
   { path: 'first-component', component: FirstComponent },
-  { path: 'second-component', component: SecondComponent },
-  { path: 'third-component', component: ThirdComponent },
+  { path: 'filmeform', component: FilmeformComponent },
   { path: 'filme', component: FilmeComponent },
+  { path: 'livro', component: LivroComponent },
 ];
 
 
