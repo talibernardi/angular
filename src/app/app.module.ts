@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { FilmeComponent } from './filme/filme.component';
 import { LivroComponent } from './livro/livro.component';
 import { BuscaFilmeComponent } from './buscafilme/buscafilme.component';
+import { FilmeformComponent } from './filmeform/filmeform.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BuscaFilmeComponent } from './buscafilme/buscafilme.component';
     FilmeComponent,
     LivroComponent,
     BuscaFilmeComponent,
+    FilmeformComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,12 +9,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { NotFoundError } from 'rxjs';
 import { BuscaFilmeComponent } from './buscafilme/buscafilme.component';
+import { FilmeformComponent } from './filmeform/filmeform.component';
 
 const routes: Routes = [
   { path: 'first-component', component: FirstComponent },
   { path: 'buscafilme', component: BuscaFilmeComponent },
   { path: 'filme', component: FilmeComponent },
   { path: 'livro', component: LivroComponent },
+  { path: 'filmeform', component: FilmeformComponent },
+  { path: 'filmeform/:id', component: FilmeformComponent },
 ];
 
 
