@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
+import { Router } from '@angular/router';
 import { FilmeService } from 'src/services/filme.service';
 
 
@@ -12,11 +13,13 @@ export class FilmeComponent implements OnInit {
   filmes: any = [];
   @Output() respostaFilme = new EventEmitter();
   
-  constructor(private filmeService: FilmeService) { }
+  constructor(private filmeService: FilmeService,
+    private redir: Router) { }
 
   ngOnInit(): void {
     this.filmeService.buscaFilmes().subscribe(filmes => {
       this.filmes = filmes;
+
       
 
     });
@@ -29,7 +32,7 @@ export class FilmeComponent implements OnInit {
   }
   
   deletafilme(id:string){
-    this.filmeService.removeFilme(id)
-    window.location.reload()
+    this.filmeService.removeFilme(id).subscribe()
+    this.redir.navigate(['/filme']);
   }
 }
