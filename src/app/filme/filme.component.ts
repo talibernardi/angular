@@ -27,11 +27,9 @@ export class FilmeComponent implements OnInit {
     console.log(filmes)
     this.filmes=filmes
   }
+  
   deletafilme(id:string){
     this.filmeService.removeFilme(id)
     window.location.reload()
-
-
   }
-
 }

@@ -1,45 +1,43 @@
 <app-buscafilme (onSearch)="respostafilme($event)"></app-buscafilme>
 
 <div class="container">
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Título</th>
-            <th scope="col">Diretor</th>
-            <th scope="col">Duracao</th>
-            <th scope="col">Genero</th>
-            <th scope="col">Ação</th>
-          </tr>
-        </thead>
-        <tbody>
-        
-          
-          <tr *ngFor= "let filme of filmes">
-         
-            <td scope="row">{{ filme.titulo}}</td>
-            <td scope="row">{{ filme.diretor}}</td>
-            <td scope="row">{{ filme.duracao}}</td>
-            <td scope="row">{{ filme.genero}}</td>
-             
-            <td>
-              <div class="dropdown">
-                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Ação
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="filmeform/{{filme.id}}">Editar</a>
-                  <a class="dropdown-item" href="#" (click)="deletafilme(filme.id)">Deletar</a>
-                </div>
-              </div>
-            </td>
-      
-          </tr>
-        </tbody>
-      </table>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Título</th>
+        <th scope="col">Diretor</th>
+        <th scope="col">Duracao</th>
+        <th scope="col">Genero</th>
+        <th scope="col">
+          Ação
+          <a href="/filmeform" class="btn btn-sm btn-success">Criar</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+      <tr *ngFor="let filme of filmes">
+
+        <td scope="row">{{ filme.titulo}}</td>
+        <td scope="row">{{ filme.diretor}}</td>
+        <td scope="row">{{ filme.duracao}}</td>
+        <td scope="row">{{ filme.genero}}</td>
+        <td>
+          <div class="dropdown">
+            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Ação
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="filmeform/{{filme.id}}">Editar</a>
+              <a class="dropdown-item" href="#" (click)="deletafilme(filme.id)">Deletar</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-
-
 <app-livro></app-livro>
-
-

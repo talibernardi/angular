@@ -1,21 +1,20 @@
-<form>
-    <div class="container">
-      <label for="exampleInputEmail1">Título</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="titulo">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="container">
-      <label for="exampleInputPassword1">Diretor</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="container">
-        <label for="exampleInputPassword1">Genero</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-      <div class="container">
-        <label for="exampleInputPassword1">Duração</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-    
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+<h3>{{filme.id ? 'Editar' : 'Criar'}} filme</h3>
+<form (ngSubmit)="salvar()">
+  <div class="container">
+    <label for="exampleInputEmail1">Título</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="titulo" [(ngModel)]="filme.titulo">
+  </div>
+  <div class="container">
+    <label >Diretor</label>
+    <input type="text" class="form-control" name="diretor" [(ngModel)]="filme.diretor">
+  </div>
+  <div class="container">
+    <label >Genero</label>
+    <input type="text" class="form-control" name="genero" [(ngModel)]="filme.genero">
+  </div>
+  <div class="container">
+    <label >Duração</label>
+    <input type="number" class="form-control" name="duracao" [(ngModel)]="filme.duracao">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
