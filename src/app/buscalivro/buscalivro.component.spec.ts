@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { BuscaFilmeComponent } from './buscafilme.component';
 
+import { BuscalivroComponent } from './buscalivro.component';
 
-describe('BuscaFilmeComponent', () => {
-  let component: BuscaFilmeComponent;
-  let fixture: ComponentFixture<BuscaFilmeComponent>;
+describe('BuscalivroComponent', () => {
+  let component: BuscalivroComponent;
+  let fixture: ComponentFixture<BuscalivroComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BuscaFilmeComponent ]
+      declarations: [ BuscalivroComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BuscaFilmeComponent);
+    fixture = TestBed.createComponent(BuscalivroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

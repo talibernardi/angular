@@ -1,0 +1,19 @@
+
+  input[type=text] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(85, 70, 70, 0.06);
+  }
+  
+  .btn-custom {
+    transition: 0.5s;
+    color: #fff;
+    background-color: #a1d4c2;
+    border-color: #a1d4c2;
+}
+.btn-custom:hover {
+    color: #fff;
+    background-color: rgb(118, 240, 203);
+}
+  
+  

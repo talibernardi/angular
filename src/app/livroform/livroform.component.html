@@ -1,0 +1,21 @@
+<h3 class="d-flex justify-content-center">{{livro.id ? 'Editar' : 'Criar'}} livro</h3>
+<form (ngSubmit)="salvar()">
+  <div class="container">
+    <label for="exampleInputEmail1">Título</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="titulo" [(ngModel)]="livro.titulo">
+  </div>
+  <div class="container">
+    <label >Editora</label>
+    <input type="text" class="form-control" name="editora" [(ngModel)]="livro.editora">
+  </div>
+  <div class="container">
+    <label >Genero</label>
+    <input type="text" class="form-control" name="genero" [(ngModel)]="livro.genero">
+  </div>
+  <div class="container">
+    <label >Duração</label>
+    <input type="number" class="form-control" name="duracao" [(ngModel)]="livro.duracao">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

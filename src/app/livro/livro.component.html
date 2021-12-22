@@ -1,3 +1,4 @@
+<app-buscalivro (onSearch)="respostalivro($event)"></app-buscalivro>
 
 
 <div class="container">
@@ -8,6 +9,12 @@
             <th scope="col">Editora</th>
             <th scope="col">Duracao</th>
             <th scope="col">Genero</th>
+            <th scope="col">Tipo</th>
+
+            <th scope="col">
+              Ação
+              <a href="/livroform" class="btn btn-sm btn-success">Criar</a>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -19,9 +26,20 @@
             <td scope="row">{{ livro.editora}}</td>
             <td scope="row">{{ livro.duracao}}</td>
             <td scope="row">{{ livro.genero}}</td>
-      
+            <td scope="row">{{ livro.tipo}}</td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ação
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="livroform/{{livro.id}}">Editar</a>
+                  <a class="dropdown-item" href="#" (click)="deletalivro(livro.id)">Deletar</a>
+                </div>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
-</div>
-
+    </div>
